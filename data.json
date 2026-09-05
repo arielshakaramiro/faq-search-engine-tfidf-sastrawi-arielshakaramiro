@@ -1,0 +1,24 @@
+{
+    "qa_corpus": [
+        {"question": "Apakah Emerald Mabel menyediakan pengiriman untuk semua produk?", "answer": "Ya, kami menyediakan layanan pengiriman untuk semua produk kami. Biaya pengiriman dapat bervariasi tergantung lokasi."},
+        {"question": "Berapa lama waktu pengiriman biasanya?", "answer": "Waktu pengiriman tergantung pada lokasi pengiriman. Pengiriman lokal biasanya memakan waktu 3-5 hari kerja, sedangkan pengiriman luar kota bisa mencapai 7-10 hari kerja."},
+        {"question": "Apakah saya bisa mengembalikan produk jika tidak puas?", "answer": "Tentu, Anda bisa mengembalikan produk dalam waktu 14 hari setelah menerima produk, asalkan produk dalam kondisi yang sama saat diterima."},
+        {"question": "Bagaimana cara mengajukan pengembalian barang?", "answer": "Silakan hubungi customer service kami melalui telepon atau email dengan menyertakan bukti pembelian dan alasan pengembalian barang."},
+        {"question": "Apakah ada garansi untuk produk dari Emerald Mabel?", "answer": "Ya, kami memberikan garansi selama 1 tahun untuk setiap produk dengan cacat pabrik. Garansi ini tidak termasuk kerusakan karena penggunaan."},
+        {"question": "Bagaimana cara melacak pesanan saya?", "answer": "Anda akan menerima email berisi nomor pelacakan setelah pesanan dikirim. Gunakan nomor tersebut untuk melacak status pengiriman di situs kami."},
+        {"question": "Apakah saya bisa memesan produk custom di Emerald Mabel?", "answer": "Ya, kami menerima pesanan custom untuk furnitur. Silakan hubungi tim kami untuk diskusi lebih lanjut mengenai spesifikasi yang Anda inginkan."},
+        {"question": "Metode pembayaran apa saja yang diterima?", "answer": "Kami menerima pembayaran melalui transfer bank, kartu kredit, dan pembayaran digital seperti e-wallet."},
+        {"question": "Apakah ada diskon untuk pembelian dalam jumlah besar?", "answer": "Ya, kami menyediakan diskon untuk pembelian dalam jumlah besar. Silakan hubungi customer service kami untuk informasi lebih lanjut."},
+        {"question": "Apakah Emerald Mabel memiliki showroom yang bisa dikunjungi?", "answer": "Ya, kami memiliki showroom yang dapat Anda kunjungi. Silakan cek alamat dan jam operasional kami di situs web."},
+        {"question": "Bagaimana cara merawat furnitur kayu agar tahan lama?", "answer": "Untuk menjaga ketahanan furnitur kayu, hindari paparan sinar matahari langsung dan bersihkan secara berkala dengan kain lembut."},
+        {"question": "Apakah tersedia layanan perakitan untuk produk yang saya beli?", "answer": "Ya, kami menyediakan layanan perakitan untuk beberapa produk. Mohon tanyakan kepada customer service untuk produk yang memenuhi syarat."},
+        {"question": "Bisakah saya membatalkan pesanan yang sudah dibuat?", "answer": "Anda bisa membatalkan pesanan sebelum pesanan dikirim. Jika pesanan sudah dikirim, Anda harus menunggu barang sampai dan mengajukan pengembalian."},
+        {"question": "Bagaimana jika produk yang diterima dalam kondisi rusak?", "answer": "Jika produk yang Anda terima dalam kondisi rusak, segera hubungi customer service kami untuk klaim penggantian atau pengembalian."},
+        {"question": "Apakah Emerald Mabel menyediakan layanan pengiriman ke luar negeri?", "answer": "Saat ini kami hanya melayani pengiriman dalam negeri. Namun, Anda bisa menghubungi customer service untuk kemungkinan lainnya."},
+        {"question": "Apakah saya bisa mengatur jadwal pengiriman?", "answer": "Ya, Anda bisa mengatur jadwal pengiriman yang sesuai. Silakan berikan preferensi jadwal kepada customer service kami saat melakukan pemesanan."},
+        {"question": "Apakah ada biaya tambahan untuk pengiriman ke daerah terpencil?", "answer": "Ya, pengiriman ke daerah terpencil mungkin dikenakan biaya tambahan. Customer service kami akan memberi tahu biaya tambahan jika ada."},
+        {"question": "Bagaimana cara mendapatkan katalog produk Emerald Mabel?", "answer": "Anda bisa mendapatkan katalog produk dengan mengunjungi situs web kami atau menghubungi customer service untuk mengirimkan katalog ke email Anda."},
+        {"question": "Apa yang harus saya lakukan jika pesanan saya belum sampai?", "answer": "Jika pesanan Anda belum sampai dalam waktu yang dijanjikan, silakan hubungi customer service kami untuk bantuan lebih lanjut."},
+        {"question": "Apakah ada promo khusus untuk pelanggan baru?", "answer": "Ya, kami sering mengadakan promo untuk pelanggan baru. Kunjungi situs web kami atau hubungi customer service untuk informasi promo terbaru."}
+    ]
+}

@@ -1,0 +1,4 @@
+scikit-learn>=1.8.0
+Sastrawi>=1.0.1
+joblib>=1.5.3
+numpy>=2.0.0
