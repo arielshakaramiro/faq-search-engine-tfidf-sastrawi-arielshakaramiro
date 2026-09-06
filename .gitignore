@@ -6,3 +6,5 @@ __pycache__/
 # Artefak hasil train.py -- regenerable, jangan di-commit
 vectorizer.joblib
 vector.json
+git/
+git_panduan/
