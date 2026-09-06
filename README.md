@@ -19,21 +19,23 @@ python app.py
 
 Materi bootcamp aslinya memakai **Euclidean distance** dengan threshold tetap (`THR = 1.0`) untuk menentukan kecocokan, dan mentransform pertanyaan user **tanpa preprocessing**. Setelah dijalankan dan diuji ulang, ditemukan dua masalah nyata:
 
-1. **Query di luar topik bisa lolos sebagai "cocok".** Pertanyaan "resep nasi goreng enak" (tidak berhubungan sama sekali dengan FAQ furnitur) menghasilkan Euclidean distance persis di batas threshold (≈0.9999–1.0) — nyaris selalu dianggap cocok padahal seharusnya ditolak.
+1. **Query di luar topik bisa lolos sebagai "cocok".** Pertanyaan "resep nasi goreng enak" (tidak berhubungan sama sekali dengan FAQ furnitur) menghasilkan Euclidean distance **persis 1.0000** — tepat di angka ambang batasnya, bukan cuma "mendekati".
 2. **Pertanyaan user tidak diproses dengan cara yang sama seperti data training**, sehingga overlap kata jadi lebih rendah dari seharusnya.
 
 **Perbaikan yang diterapkan di `app.py` versi ini:**
 - Pertanyaan user sekarang di-preprocess dengan fungsi yang sama persis seperti data training.
 - Metrik default diganti ke **cosine similarity** dengan ambang batas kemiripan minimum (0.15), karena cosine similarity mengukur kemiripan *arah* vektor dan tidak terlalu terpengaruh oleh panjang teks — sehingga jauh lebih tegas menolak query yang tidak relevan.
 
+> ⚠️ **Catatan jujur:** angka 0.15 di atas dipilih manual berdasarkan 4 query uji di bawah, bukan hasil tuning sistematis. Cosine similarity terbukti lebih andal untuk kasus-kasus ini, tapi bukan berarti "solved sepenuhnya" — sistem produksi sebaiknya diuji dengan variasi pertanyaan yang jauh lebih banyak sebelum mengandalkan satu angka ambang batas tetap.
+
 ### Hasil Perbandingan (Terverifikasi)
 
 | Query Uji | Euclidean Distance | Cosine Similarity | Cocok? (Cosine) |
 |---|---|---|---|
 | "berapa lama pengiriman barang" | 0.8294 | 0.6560 | ✅ Ya |
-| "cara mengembalikan barang rusak" | 0.8785 | 0.6141 | ✅ Ya |
+| "cara mengembalikan barang yang rusak" | 0.9124 | 0.5838 | ✅ Ya |
 | "apakah ada diskon" | 0.8952 | 0.5993 | ✅ Ya |
-| "resep nasi goreng enak" *(di luar topik)* | **0.9999** (nyaris lolos) | **0.0000** | ❌ Ditolak dengan benar |
+| "resep nasi goreng enak" *(di luar topik)* | **1.0000** (persis di threshold) | **0.0000** | ❌ Ditolak dengan benar |
 
 ![Perbandingan Euclidean vs Cosine](images/euclidean-vs-cosine-comparison.png)
 
@@ -62,4 +64,4 @@ Materi konsep di balik TF-IDF (dan perbandingannya dengan Bag of Words serta Wor
 
 ---
 
-*Bagian dari catatan belajar AI Engineering saya — sesi materi NLP, rubythalib.ai AI Engineer Bootcamp.*
+*Bagian dari catatan belajar AI Engineering saya.*
